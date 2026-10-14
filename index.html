@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kazuky Kitchen | Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#inicio" class="logo">Kazuky Kitchen</a>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#menu">Menu</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h1>Kazuky Kitchen</h1>
+    <p>Cozinha tradicional portuguesa, feita devagar, com produtos de época.</p>
+    <a href="#menu" class="btn">Ver o menu</a>
+  </section>
+
+  <section id="sobre" class="section">
+    <h2>About Kazuky Kitchen</h2>
+    <p>Kazuky Kitchen is a fictional restaurant created as a web design demo, inspired by traditional Portuguese cooking. Every dish is inspired by the recipes our grandmothers made: slow-cooked stews, grilled fish and desserts that take time to prepare.</p>
+    <p>The space is simple and warm, with wooden tables, tiled walls and a relaxed atmosphere that invites you to stay for a long lunch. We work with seasonal produce and local suppliers.</p>
+    <p>Whether you're visiting for a quick coffee or a family dinner, we hope you feel at home.</p>
+  </section>
+
+  <section id="menu" class="section alt">
+    <h2>Menu</h2>
+    <div class="menu-grid">
+      <article class="card">
+        <h3>Caldo verde</h3>
+        <p class="price">5,50 €</p>
+      </article>
+      <article class="card">
+        <h3>Bacalhau à Brás</h3>
+        <p class="price">14,00 €</p>
+      </article>
+      <article class="card">
+        <h3>Arroz de pato</h3>
+        <p class="price">16,50 €</p>
+      </article>
+      <article class="card">
+        <h3>Cozido à portuguesa</h3>
+        <p class="price">15,00 €</p>
+      </article>
+      <article class="card">
+        <h3>Pastel de nata</h3>
+        <p class="price">2,50 €</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contactos" class="section">
+    <h2>Contactos</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p><strong>Morada:</strong> Rua Exemplo, 123, 1000-000 Lisboa, Portugal</p>
+        <p><strong>Telefone:</strong> +351 210 000 000</p>
+        <p><strong>Email:</strong> info@kazukykitchen.example</p>
+        <p><strong>Horário:</strong> Terça a domingo, 12h00 às 22h00. Segunda-feira, encerrado.</p>
+      </div>
+      <form id="contact-form" novalidate>
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" rows="4" placeholder="Mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+        <p id="form-feedback" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Kazuky Kitchen. Demo project, fictional restaurant.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
